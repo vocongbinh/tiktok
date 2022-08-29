@@ -1,0 +1,14 @@
+.more-active {
+    min-width: 230px;
+    font-weight: 600;
+    font-size: 16px;
+    .menu-item {
+        margin-left: 0px;
+        padding: 11px 16px;
+        border-radius: 0;
+        font-weight: 600;
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
