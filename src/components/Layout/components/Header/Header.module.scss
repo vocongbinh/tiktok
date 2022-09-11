@@ -21,82 +21,30 @@
     
     // padding: 0 24px;    
     }
-    .search, .search-result {
-    width: 361px;
-}
-.search {
-    position: relative;
-    height: var(--search-height);   
+
+
+//action
+.action {
+
     display: flex;
     align-items: center;
-    background-color: rgba(22, 24, 35, 0.06);
-    border-radius: var(--radius);
-    padding-left: 16px; 
-    border: 1.5px solid transparent;
-    &:focus-within {
-        border-color: rgba(22, 24, 35, 0.2);
-        
-    }
-    input {
-        height: 100%;
-        width: 200px;
-        outline :none;
-        border: transparent;
-        background-color: transparent;
-        font-size: 1.6rem;
-        color: var(--black);
-        caret-color: var(--primary);
-       
-        }
-        input:not(:placeholder-shown) ~ .search-btn {
-            color:rgba(22, 24, 35, 0.5); ;
-            
-        }
-    &::after {
-        content : "";
-        width: 1px;
-        height: calc(var(--search-height) - var(--search-space-top) * 2);//viết dấu trừ cách ra mới được
-        position: absolute;
-        right: 52px;
-        top: var(--search-space-top);
-        background-color: var(--black)
-    }
-    .search-btn {
-        width: 52px;
-        height: 44px;
-        color:rgba(22, 24, 35, 0.2);
-        position: absolute;
-        right: 0;
-        font-size: 16px;
-        border-top-right-radius: var(--radius);
-        border-bottom-right-radius: var(--radius);
+}
+.action-btn{
+    font-size: 24px;
+    padding: 4px 16px;
+    cursor: pointer;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
 
-        &:hover {
-             background-color: rgba(22, 24, 35, 0.09);
-             cursor: pointer;   
-        }
-        &:active {
-            background-color: rgba(22, 24, 35, 0.1);
-            
-        }
-        }
 
 }
-.clear, .loading {
-    position: absolute;
-    top: 50%;
-    right: 72px;    
-    transform: translateY(-50%);
-    font-size: 16px;
-    color:rgba(22, 24, 35, 0.09);
-    }
-.account {
-    height: 30px;
-    padding: 5px 12px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
+.avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-left: 24px;
+    
 }
 .more-btn {
     margin-left: 28px;

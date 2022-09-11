@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { publicRouter, privateRouter } from "~/Routes";
 import DefaultLayout from "~/components/Layout/DefaultLayout";
+import Home from '~/pages/home'
 // import OnlyHeader from '~/components/Layout/OnlyHeader'
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
                 key={index}
                 path={route.path}
                 element={
-                  <Layout>
+                   <Layout>
                     <Page />
                   </Layout>
                 }
